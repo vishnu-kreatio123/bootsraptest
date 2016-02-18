@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+        ul.nav-pills {
+            margin-left: 80px;
+            position: fixed;
+            text-align: center;
+            top: 250px;
+        }
+        div.col-sm-9 div {
+            font-size: 28px;
+            height: 450px;
+            /*margin-right: -15px;*/
+            margin-top: -20px;
+            top: 80px;
+        }
+        .col-sm-9 {
+            top: 16px;
+            width: 75%;
+        }
+        a {
+            color: darkgray;
+            text-decoration: none;
+        }
+        .nav-pills > li.active > a:hover {
+            background-color: #808080;
+            color: #fff;
+        }
+        .top-menu {
+            list-style-type: none;
+            margin: -9px 0 0 100px;
+            overflow: hidden;
+            text-align: center;
+            margin-bottom: 37px;
+        }
+        /*#section1 {color: lightseagreen; background-color: lightseagreen;}*/
+        /*#section2 {color: lightcoral; background-color: lightcoral;}*/
+        /*#section3 {color: lightblue; background-color: lightblue;}*/
+        /*#section41 {color: lightpink; background-color: lightpink;}*/
+        /*#section42 {color: lightskyblue; background-color: lightskyblue;}*/
+
+        /*@media screen and (max-width: 810px) {*/
+            /*#section1, #section2, #section3, #section41, #section42  {*/
+                /*margin-left: 150px;*/
+            /*}*/
+        /*}*/
+        .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+            background-color: whitesmoke;
+            color: #fff;
+        }
+
+
+        .nav-bar.top-menu > li {
+            color: gray;
+            float: left;
+            font-family: Helvetica;
+            font-size: 17px;
+            margin-left: 135px;
+            font-weight: bold;
+        }
+
+        /*li a {*/
+            /*display: inline-block;*/
+            /*color: white;*/
+            /*text-align: center;*/
+            /*padding: 14px 16px;*/
+            /*text-decoration: none;*/
+        /*}*/
+        .nav > li > a {
+            display: block;
+            font-size: 16px;
+            font-style: oblique;
+            padding: 10px 15px;
+            position: relative;
+        }
+        .over-image {
+            color: white;
+            position: relative;
+            z-index: 1000;
+        }
+        .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 0px;
+            position: relative;
+        }
+    </style>
+</head>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20" style="background-color: whitesmoke;">
+
+
+<div class="container-fluid">
+    <div class="row">
+        <!--<div class="col-md-12" style="background-color:gold;height: 45px;margin-bottom: 15px;position: fixed;z-index: 1000;"></div>-->
+        <div class="col-xs-12" style="top: 69px;"><hr></div>
+        <nav class="col-sm-12">
+            <ul class="nav-bar top-menu">
+                <li>| This Week</li>
+                <li>| Next Week</li>
+                <li>| Last Week</li>
+                <li>| Oldies</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="row">
+
+        <nav class="col-sm-3" id="myScrollspy">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <li><a href="#section4">Section 4</a></li>
+                <li><a href="#section5">Section 5</a></li>
+                <li><a href="#section6">Section 6</a></li>
+                <li><a href="#section7">Section 7</a></li>
+            </ul>
+        </nav>
+        <div class="col-sm-9">
+            <div id="section1">
+                <img src="http://res.cloudinary.com/kreatio/image/upload/w_945,h_450,c_fill,g_face,e_brightness:-40/v1454435161/e9hlnfatezmzgpxn5el3.jpg" class="img-responsive" alt="Cinque Terre">
+                <div class="over-image">
+                <h1>Section 1</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                </div>
+            </div>
+            <div id="section2">
+                <img src="http://res.cloudinary.com/kreatio/image/upload/w_945,h_450,c_fill,g_face,e_brightness:-40/v1454521932/bcpo7byyzo8sy3bvgims.jpg" class="img-responsive" alt="Cinque Terre">
+                <div class="over-image">
+                <h1>Section 2</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                    </div>
+            </div>
+            <div id="section3">
+                <img src="http://res.cloudinary.com/kreatio/image/upload/w_945,h_450,c_fill,g_face,e_brightness:-40/v1454435161/e9hlnfatezmzgpxn5el3.jpg" class="img-responsive" alt="Cinque Terre">
+                <div class="over-image">
+                <h1>Section 3</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                    </div>
+            </div>
+            <div id="section4">
+                <img src="http://www.controlfilms.tv/wp-content/uploads/2015/12/pleix-lexus-poise-cover-1440x810.jpg" class="img-responsive" alt="Cinque Terre" height="450" width="945">
+                <div class="over-image">
+                <h1>Section 4</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                    </div>
+            </div>
+            <div id="section5">
+                <img src="http://res.cloudinary.com/kreatio/image/upload/w_945,h_450,c_fill,g_face,e_brightness:-40/v1454435161/e9hlnfatezmzgpxn5el3.jpg" class="img-responsive" alt="Cinque Terre">
+                <div class="over-image">
+                <h1>Section 5</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                    </div>
+            </div>
+            <div id="section6">
+                <img src="http://res.cloudinary.com/kreatio/image/upload/w_945,h_450,c_fill,g_face,e_brightness:-40/v1454435161/bcpo7byyzo8sy3bvgims.jpg" class="img-responsive" alt="Cinque Terre">
+                <div class="over-image">
+                <h1>Section 6</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                    </div>
+            </div>
+            <div id="section7">
+                <img src="http://res.cloudinary.com/kreatio/image/upload/w_945,h_450,c_fill,g_face,e_brightness:-40/v1454435161/e9hlnfatezmzgpxn5el3.jpg" class="img-responsive" alt="Cinque Terre">
+                <div class="over-image">
+                <h1>Section 7</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>                                		
